@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/urbai/projects/cppokemon/out",
+            "binaryPath": "/home/urbai/projects/cppokemon/out/cppokemon",
+            "binaryArgs": []
+        }
+    ]
+}
