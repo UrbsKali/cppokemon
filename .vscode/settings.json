@@ -4,8 +4,8 @@
     },
     "makefile.launchConfigurations": [
         {
-            "cwd": "/home/urbai/projects/cppokemon/out",
-            "binaryPath": "/home/urbai/projects/cppokemon/out/cppokemon",
+            "cwd": "/home/urbai/projects/cppokemon/build/bin",
+            "binaryPath": "/home/urbai/projects/cppokemon/build/bin/cppokemon",
             "binaryArgs": []
         }
     ]

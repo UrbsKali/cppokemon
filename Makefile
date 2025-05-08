@@ -8,7 +8,7 @@ LIB_DIR = libs/pokemon/src
 INCLUDE_DIR = includes libs/pokemon/includes
 DATA_DIR = data
 BUILD_DIR = build
-OUT_DIR = out
+OUT_DIR = build/bin
 
 # Source files
 SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)

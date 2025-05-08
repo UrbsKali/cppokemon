@@ -9,7 +9,7 @@
             "name": "Makefile",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/${workspaceFolderBasename}",
+            "program": "${workspaceFolder}/build/bin/${workspaceFolderBasename}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
