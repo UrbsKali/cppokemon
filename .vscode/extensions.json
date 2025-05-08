@@ -4,6 +4,7 @@
         "ms-vscode.cpptools-extension-pack",
         "ms-vscode-remote.remote-wsl",
         "github.copilot",
-        "ms-vscode.makefile-tools"
+        "ms-vscode.makefile-tools",
+        "sanaajani.taskrunnercode"
     ]
 }
