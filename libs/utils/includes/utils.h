@@ -1,3 +1,6 @@
+#ifndef UTILS_H
+#define UTILS_H
+
 #include <vector>
 #include <iostream>
 #include <fstream>
@@ -11,3 +14,4 @@ namespace utils
 {
     vector<string> splitCSVLine(const string &line);
 }
+#endif

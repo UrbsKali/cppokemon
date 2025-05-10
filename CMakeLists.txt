@@ -22,6 +22,7 @@ file(GLOB_RECURSE LIB_FILES ${LIBS_DIR}/*/src/*.cpp)
 include_directories(
     ${LIBS_DIR}/pokemons/includes
     ${LIBS_DIR}/utils/includes
+    ${LIBS_DIR}/game/includes
 )
 
 # Output binary

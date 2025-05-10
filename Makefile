@@ -129,6 +129,54 @@ cppokemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/build
 .PHONY : cppokemon/fast
 
+libs/game/src/game.o: libs/game/src/game.cpp.o
+.PHONY : libs/game/src/game.o
+
+# target to build an object file
+libs/game/src/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/game.cpp.o
+.PHONY : libs/game/src/game.cpp.o
+
+libs/game/src/game.i: libs/game/src/game.cpp.i
+.PHONY : libs/game/src/game.i
+
+# target to preprocess a source file
+libs/game/src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/game.cpp.i
+.PHONY : libs/game/src/game.cpp.i
+
+libs/game/src/game.s: libs/game/src/game.cpp.s
+.PHONY : libs/game/src/game.s
+
+# target to generate assembly for a file
+libs/game/src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/game.cpp.s
+.PHONY : libs/game/src/game.cpp.s
+
+libs/game/src/gameData.o: libs/game/src/gameData.cpp.o
+.PHONY : libs/game/src/gameData.o
+
+# target to build an object file
+libs/game/src/gameData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/gameData.cpp.o
+.PHONY : libs/game/src/gameData.cpp.o
+
+libs/game/src/gameData.i: libs/game/src/gameData.cpp.i
+.PHONY : libs/game/src/gameData.i
+
+# target to preprocess a source file
+libs/game/src/gameData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/gameData.cpp.i
+.PHONY : libs/game/src/gameData.cpp.i
+
+libs/game/src/gameData.s: libs/game/src/gameData.cpp.s
+.PHONY : libs/game/src/gameData.s
+
+# target to generate assembly for a file
+libs/game/src/gameData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/game/src/gameData.cpp.s
+.PHONY : libs/game/src/gameData.cpp.s
+
 libs/pokemons/src/pokemon.o: libs/pokemons/src/pokemon.cpp.o
 .PHONY : libs/pokemons/src/pokemon.o
 
@@ -306,6 +354,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cppokemon"
+	@echo "... libs/game/src/game.o"
+	@echo "... libs/game/src/game.i"
+	@echo "... libs/game/src/game.s"
+	@echo "... libs/game/src/gameData.o"
+	@echo "... libs/game/src/gameData.i"
+	@echo "... libs/game/src/gameData.s"
 	@echo "... libs/pokemons/src/pokemon.o"
 	@echo "... libs/pokemons/src/pokemon.i"
 	@echo "... libs/pokemons/src/pokemon.s"
