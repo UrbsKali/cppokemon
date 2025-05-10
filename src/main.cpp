@@ -1,24 +1,15 @@
-#include "main.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+#include <ctime>
+
+#include "pokemon.h"
+#include "utils.h"
 
 using namespace std;
-
-namespace util
-{
-    inline vector<string> splitCSVLine(const string &line)
-    {
-        vector<string> result;
-        stringstream ss(line);
-        string cell;
-        while (getline(ss, cell, ','))
-        {
-            // trim spaces
-            cell.erase(cell.find_last_not_of(" \n\r\t") + 1);
-            cell.erase(0, cell.find_first_not_of(" \n\r\t"));
-            result.push_back(cell);
-        }
-        return result;
-    }
-}
 
 class GameData
 {
@@ -36,7 +27,7 @@ public:
         getline(f, line);
         while (getline(f, line))
         {
-            auto c = util::splitCSVLine(line);
+            auto c = utils::splitCSVLine(line);
             if (c.size() < 6)
                 continue;
 
@@ -314,7 +305,7 @@ Player loadPlayer(const string &file, const vector<Pokemon *> &dex)
     getline(f, line); // header
     if (!getline(f, line))
         throw runtime_error("CSV vide");
-    auto c = util::splitCSVLine(line); // [Nom, Poke1..6]
+    auto c = utils::splitCSVLine(line); // [Nom, Poke1..6]
 
     Player pl(c[0]);
     for (size_t i = 1; i < c.size(); ++i)
@@ -342,7 +333,7 @@ vector<T> loadTrainers(const string &file, const vector<Pokemon *> &dex)
     {
         if (line.empty())
             continue;
-        auto c = util::splitCSVLine(line);
+        auto c = utils::splitCSVLine(line);
         if (c.empty())
             continue;
 
