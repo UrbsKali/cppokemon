@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <ctime>
 
-#include "pokemon.h"
+#include "pokemons.h"
 #include "utils.h"
 
 using namespace std;

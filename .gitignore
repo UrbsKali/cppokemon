@@ -3,5 +3,3 @@ cmake_install
 CMakeFiles
 CMakeCache.txt
 Makefile
-*.o
-bin

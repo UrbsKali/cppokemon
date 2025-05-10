@@ -13,7 +13,6 @@ set(SRC_DIR src)
 set(LIBS_DIR libs)
 set(DATA_DIR data)
 set(BUILD_DIR ${CMAKE_BINARY_DIR})
-set(OUT_DIR ${CMAKE_BINARY_DIR}/bin)
 
 # Source files
 file(GLOB SRC_FILES ${SRC_DIR}/*.cpp)
@@ -21,7 +20,7 @@ file(GLOB_RECURSE LIB_FILES ${LIBS_DIR}/*/src/*.cpp)
 
 # Include directories
 include_directories(
-    ${LIBS_DIR}/pokemon/includes
+    ${LIBS_DIR}/pokemons/includes
     ${LIBS_DIR}/utils/includes
 )
 
@@ -30,6 +29,3 @@ set(TARGET cppokemon)
 
 # Add executable
 add_executable(${TARGET} ${SRC_FILES} ${LIB_FILES})
-
-# Set output directory
-set_target_properties(${TARGET} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${OUT_DIR})

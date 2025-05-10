@@ -129,29 +129,125 @@ cppokemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/build
 .PHONY : cppokemon/fast
 
-libs/pokemon/src/pokemon.o: libs/pokemon/src/pokemon.cpp.o
-.PHONY : libs/pokemon/src/pokemon.o
+libs/pokemons/src/pokemon.o: libs/pokemons/src/pokemon.cpp.o
+.PHONY : libs/pokemons/src/pokemon.o
 
 # target to build an object file
-libs/pokemon/src/pokemon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemon/src/pokemon.cpp.o
-.PHONY : libs/pokemon/src/pokemon.cpp.o
+libs/pokemons/src/pokemon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemon.cpp.o
+.PHONY : libs/pokemons/src/pokemon.cpp.o
 
-libs/pokemon/src/pokemon.i: libs/pokemon/src/pokemon.cpp.i
-.PHONY : libs/pokemon/src/pokemon.i
+libs/pokemons/src/pokemon.i: libs/pokemons/src/pokemon.cpp.i
+.PHONY : libs/pokemons/src/pokemon.i
 
 # target to preprocess a source file
-libs/pokemon/src/pokemon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemon/src/pokemon.cpp.i
-.PHONY : libs/pokemon/src/pokemon.cpp.i
+libs/pokemons/src/pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemon.cpp.i
+.PHONY : libs/pokemons/src/pokemon.cpp.i
 
-libs/pokemon/src/pokemon.s: libs/pokemon/src/pokemon.cpp.s
-.PHONY : libs/pokemon/src/pokemon.s
+libs/pokemons/src/pokemon.s: libs/pokemons/src/pokemon.cpp.s
+.PHONY : libs/pokemons/src/pokemon.s
 
 # target to generate assembly for a file
-libs/pokemon/src/pokemon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemon/src/pokemon.cpp.s
-.PHONY : libs/pokemon/src/pokemon.cpp.s
+libs/pokemons/src/pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemon.cpp.s
+.PHONY : libs/pokemons/src/pokemon.cpp.s
+
+libs/pokemons/src/pokemonEau.o: libs/pokemons/src/pokemonEau.cpp.o
+.PHONY : libs/pokemons/src/pokemonEau.o
+
+# target to build an object file
+libs/pokemons/src/pokemonEau.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonEau.cpp.o
+.PHONY : libs/pokemons/src/pokemonEau.cpp.o
+
+libs/pokemons/src/pokemonEau.i: libs/pokemons/src/pokemonEau.cpp.i
+.PHONY : libs/pokemons/src/pokemonEau.i
+
+# target to preprocess a source file
+libs/pokemons/src/pokemonEau.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonEau.cpp.i
+.PHONY : libs/pokemons/src/pokemonEau.cpp.i
+
+libs/pokemons/src/pokemonEau.s: libs/pokemons/src/pokemonEau.cpp.s
+.PHONY : libs/pokemons/src/pokemonEau.s
+
+# target to generate assembly for a file
+libs/pokemons/src/pokemonEau.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonEau.cpp.s
+.PHONY : libs/pokemons/src/pokemonEau.cpp.s
+
+libs/pokemons/src/pokemonFeu.o: libs/pokemons/src/pokemonFeu.cpp.o
+.PHONY : libs/pokemons/src/pokemonFeu.o
+
+# target to build an object file
+libs/pokemons/src/pokemonFeu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonFeu.cpp.o
+.PHONY : libs/pokemons/src/pokemonFeu.cpp.o
+
+libs/pokemons/src/pokemonFeu.i: libs/pokemons/src/pokemonFeu.cpp.i
+.PHONY : libs/pokemons/src/pokemonFeu.i
+
+# target to preprocess a source file
+libs/pokemons/src/pokemonFeu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonFeu.cpp.i
+.PHONY : libs/pokemons/src/pokemonFeu.cpp.i
+
+libs/pokemons/src/pokemonFeu.s: libs/pokemons/src/pokemonFeu.cpp.s
+.PHONY : libs/pokemons/src/pokemonFeu.s
+
+# target to generate assembly for a file
+libs/pokemons/src/pokemonFeu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonFeu.cpp.s
+.PHONY : libs/pokemons/src/pokemonFeu.cpp.s
+
+libs/pokemons/src/pokemonGen.o: libs/pokemons/src/pokemonGen.cpp.o
+.PHONY : libs/pokemons/src/pokemonGen.o
+
+# target to build an object file
+libs/pokemons/src/pokemonGen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonGen.cpp.o
+.PHONY : libs/pokemons/src/pokemonGen.cpp.o
+
+libs/pokemons/src/pokemonGen.i: libs/pokemons/src/pokemonGen.cpp.i
+.PHONY : libs/pokemons/src/pokemonGen.i
+
+# target to preprocess a source file
+libs/pokemons/src/pokemonGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonGen.cpp.i
+.PHONY : libs/pokemons/src/pokemonGen.cpp.i
+
+libs/pokemons/src/pokemonGen.s: libs/pokemons/src/pokemonGen.cpp.s
+.PHONY : libs/pokemons/src/pokemonGen.s
+
+# target to generate assembly for a file
+libs/pokemons/src/pokemonGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonGen.cpp.s
+.PHONY : libs/pokemons/src/pokemonGen.cpp.s
+
+libs/pokemons/src/pokemonPlante.o: libs/pokemons/src/pokemonPlante.cpp.o
+.PHONY : libs/pokemons/src/pokemonPlante.o
+
+# target to build an object file
+libs/pokemons/src/pokemonPlante.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonPlante.cpp.o
+.PHONY : libs/pokemons/src/pokemonPlante.cpp.o
+
+libs/pokemons/src/pokemonPlante.i: libs/pokemons/src/pokemonPlante.cpp.i
+.PHONY : libs/pokemons/src/pokemonPlante.i
+
+# target to preprocess a source file
+libs/pokemons/src/pokemonPlante.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonPlante.cpp.i
+.PHONY : libs/pokemons/src/pokemonPlante.cpp.i
+
+libs/pokemons/src/pokemonPlante.s: libs/pokemons/src/pokemonPlante.cpp.s
+.PHONY : libs/pokemons/src/pokemonPlante.s
+
+# target to generate assembly for a file
+libs/pokemons/src/pokemonPlante.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppokemon.dir/build.make CMakeFiles/cppokemon.dir/libs/pokemons/src/pokemonPlante.cpp.s
+.PHONY : libs/pokemons/src/pokemonPlante.cpp.s
 
 libs/utils/src/utils.o: libs/utils/src/utils.cpp.o
 .PHONY : libs/utils/src/utils.o
@@ -210,9 +306,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cppokemon"
-	@echo "... libs/pokemon/src/pokemon.o"
-	@echo "... libs/pokemon/src/pokemon.i"
-	@echo "... libs/pokemon/src/pokemon.s"
+	@echo "... libs/pokemons/src/pokemon.o"
+	@echo "... libs/pokemons/src/pokemon.i"
+	@echo "... libs/pokemons/src/pokemon.s"
+	@echo "... libs/pokemons/src/pokemonEau.o"
+	@echo "... libs/pokemons/src/pokemonEau.i"
+	@echo "... libs/pokemons/src/pokemonEau.s"
+	@echo "... libs/pokemons/src/pokemonFeu.o"
+	@echo "... libs/pokemons/src/pokemonFeu.i"
+	@echo "... libs/pokemons/src/pokemonFeu.s"
+	@echo "... libs/pokemons/src/pokemonGen.o"
+	@echo "... libs/pokemons/src/pokemonGen.i"
+	@echo "... libs/pokemons/src/pokemonGen.s"
+	@echo "... libs/pokemons/src/pokemonPlante.o"
+	@echo "... libs/pokemons/src/pokemonPlante.i"
+	@echo "... libs/pokemons/src/pokemonPlante.s"
 	@echo "... libs/utils/src/utils.o"
 	@echo "... libs/utils/src/utils.i"
 	@echo "... libs/utils/src/utils.s"

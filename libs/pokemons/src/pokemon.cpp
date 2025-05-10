@@ -1,6 +1,5 @@
 #include <pokemon.h>
 
-
 void Pokemon::display() const
 {
     cout << name_ << " (" << t1_;
