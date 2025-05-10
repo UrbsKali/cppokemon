@@ -10,18 +10,20 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -g")
 
 # Directories
 set(SRC_DIR src)
-file(GLOB_RECURSE LIB_DIRS libs/*/src)
-file(GLOB_RECURSE INCLUDE_DIRS libs/*/includes)
+set(LIBS_DIR libs)
 set(DATA_DIR data)
 set(BUILD_DIR ${CMAKE_BINARY_DIR})
 set(OUT_DIR ${CMAKE_BINARY_DIR}/bin)
 
 # Source files
 file(GLOB SRC_FILES ${SRC_DIR}/*.cpp)
-file(GLOB LIB_FILES ${LIB_DIRS}/*.cpp)
+file(GLOB_RECURSE LIB_FILES ${LIBS_DIR}/*/src/*.cpp)
 
 # Include directories
-include_directories(${INCLUDE_DIRS})
+include_directories(
+    ${LIBS_DIR}/pokemon/includes
+    ${LIBS_DIR}/utils/includes
+)
 
 # Output binary
 set(TARGET cppokemon)

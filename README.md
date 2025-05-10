@@ -4,13 +4,12 @@ Third Year C++ projet
 # Usage 
 ## Compilation
 ```bash
-make
+cmake -B -S . -G "Unix Makefiles"
+cmake --build .
 ```
 ## Run
 ```bash
-make run
-```
-## Clean
-```bash
-make clean
+
+./build/bin/cppokemon
+
 ```
