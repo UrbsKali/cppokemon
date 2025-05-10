@@ -1,11 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <unordered_map>
-#include <algorithm>
-#include <ctime>
-
 #include "game.h"
 
 using namespace std;

@@ -4,7 +4,6 @@
 #include "pokemon.h"
 #include <vector>
 #include <string>
-#include <algorithm>
 using std::string;
 using std::vector;
 
