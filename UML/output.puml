@@ -1,0 +1,185 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Battle {
+	+Battle(Trainer& x, Trainer& y)
+	-& : Trainer&
+	-a_ : Trainer&
+	+run() : Trainer&
+}
+
+
+class Game {
+	+Game(Player player, vector<Pokemon*>& pokedex, vector<Leader> leaders, vector<Master> masters)
+	-player_ : Player
+	-dex(const string& n) : Pokemon*
+	-dex_ : unordered_map<string, Pokemon*>
+	-leaders_ : vector<Leader>
+	-masters_ : vector<Master>
+	-fightLeader() : void
+	-fightMaster() : void
+	+menu() : void
+}
+
+
+class GameData {
+	+{static} loadPlayer(const string& file, const vector<Pokemon*>& dex) : Player
+	+{static} loadPokemons(const string& file) : vector<Pokemon*>
+	+{static} loadTrainers(const string& file, const vector<Pokemon*>& dex) : vector<T>
+}
+
+
+class Leader {
+	+Leader(string n, string arene, string badge)
+	-arene_ : string
+	-badge_ : string
+	+arene() : string& {query}
+	+badge() : string& {query}
+}
+
+
+class Master {
+	+dmgBoost() : double {query}
+}
+
+
+class Player {
+	+badgeCount() : int {query}
+	-badges_ : int
+	-losses_ : int
+	-wins_ : int
+	+addBadge() : void
+	+addLoss() : void
+	+addWin() : void
+	+showTeam() : void {query}
+	+stats() : void {query}
+}
+
+
+abstract class Pokemon {
+	+Pokemon(string n, string a, string b, int hp, string atk, int dmg)
+	+~Pokemon()
+	+fainted() : bool {query}
+	+{abstract} attack(Pokemon& target, double dmgBoost) : int
+	#baseDmg_ : int
+	#hp_ : int
+	#maxHP_ : int
+	#attackName_ : string
+	#name_ : string
+	#t1_ : string
+	#t2_ : string
+	+name() : string& {query}
+	+type1() : string& {query}
+	+type2() : string& {query}
+	+{abstract} afficherType() : void {query}
+	+display() : void {query}
+	+heal() : void
+	+receive(int d) : void
+}
+
+
+class PokemonEau {
+	+PokemonEau(string n, string a, string b, int hp, string atk, int dmg)
+	+attack(Pokemon& target, double dmgBoost) : int
+	+afficherType() : void {query}
+}
+
+
+class PokemonFeu {
+	+PokemonFeu(string n, string a, string b, int hp, string atk, int dmg)
+	+attack(Pokemon& target, double dmgBoost) : int
+	+afficherType() : void {query}
+}
+
+
+class PokemonGenerique {
+	+PokemonGenerique(string n, string a, string b, int hp, string atk, int dmg)
+	+attack(Pokemon& target, double dmgBoost) : int
+	+afficherType() : void {query}
+}
+
+
+class PokemonPlante {
+	+PokemonPlante(string n, string a, string b, int hp, string atk, int dmg)
+	+attack(Pokemon& target, double dmgBoost) : int
+	+afficherType() : void {query}
+}
+
+
+class Trainer {
+	+Trainer(string n)
+	+~Trainer()
+	+active() : Pokemon*
+	+hasPokemon() : bool {query}
+	+dmgBoost() : double {query}
+	#name_ : string
+	+name() : string& {query}
+	#team_ : vector<Pokemon*>
+	+addPokemon(Pokemon* p) : void
+	+healAll() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+Pokemon <|-- PokemonEau
+
+
+Pokemon <|-- PokemonFeu
+
+
+Pokemon <|-- PokemonGenerique
+
+
+Pokemon <|-- PokemonPlante
+
+
+Trainer <|-- Leader
+
+
+Trainer <|-- Master
+
+
+Trainer <|-- Player
+
+
+
+
+
+/' Aggregation relationships '/
+
+Battle "2" *-- Trainer
+
+
+Game *-- Leader
+
+
+Game *-- Master
+
+
+Game *-- Player
+
+
+Game o-- Pokemon
+
+
+Trainer o-- Pokemon
+
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml
