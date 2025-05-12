@@ -1,6 +1,5 @@
 #include "game.h"
 
-
 // Constructor
 Game::Game(Player player, vector<Pokemon *> &pokedex, vector<Leader> leaders, vector<Master> masters)
     : player_(move(player)), leaders_(move(leaders)), masters_(move(masters))
@@ -11,14 +10,14 @@ Game::Game(Player player, vector<Pokemon *> &pokedex, vector<Leader> leaders, ve
     }
 }
 
-void Game::menu()
+void Game::mainloop()
 {
     bool run = true;
     while (run)
     {
-        cout << "\n===== MENU =====\n"
-             << "1. Mon équipe\n2. Soigner l'équipe\n3. Mes stats\n"
-             << "4. Affronter un leader\n5. Affronter un Maître\n6. Quitter\nChoix: ";
+        cout << "\n#------~ MENU ~------#\n"
+             << "1 - Mon équipe\n2 - Mes stats \n3 - Soigner l'équipe\n"
+             << "4 - Affronter un leader\n5 - Affronter un Maître\n6 - Quitter\nChoix: ";
         int c;
         cin >> c;
         switch (c)

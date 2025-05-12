@@ -16,7 +16,7 @@ public:
          vector<Leader> leaders,
          vector<Master> masters);
 
-    void menu();
+    void mainloop();
 
 private:
     Player player_;

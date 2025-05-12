@@ -14,6 +14,6 @@ int main()
     vector<Master> masters = utils::loadTrainers<Master>("./data/maitres.csv", pokedex);
 
     Game jeu(move(joueur), pokedex, leaders, masters);
-    jeu.menu();
+    jeu.mainloop();
     return 0;
 }
