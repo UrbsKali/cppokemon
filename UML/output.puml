@@ -7,10 +7,10 @@
 /' Objects '/
 
 class Battle {
-	+Battle(Trainer& x, Trainer& y)
+	+Battle(Trainer& t1, Trainer& t2)
 	-& : Trainer&
-	-a_ : Trainer&
 	+run() : Trainer&
+	-t1 : Trainer&
 }
 
 
@@ -18,19 +18,12 @@ class Game {
 	+Game(Player player, vector<Pokemon*>& pokedex, vector<Leader> leaders, vector<Master> masters)
 	-player_ : Player
 	-dex(const string& n) : Pokemon*
-	-dex_ : unordered_map<string, Pokemon*>
+	-pokedex_ : unordered_map<string, Pokemon*>
 	-leaders_ : vector<Leader>
 	-masters_ : vector<Master>
 	-fightLeader() : void
 	-fightMaster() : void
 	+menu() : void
-}
-
-
-class GameData {
-	+{static} loadPlayer(const string& file, const vector<Pokemon*>& dex) : Player
-	+{static} loadPokemons(const string& file) : vector<Pokemon*>
-	+{static} loadTrainers(const string& file, const vector<Pokemon*>& dex) : vector<T>
 }
 
 
