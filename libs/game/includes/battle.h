@@ -1,10 +1,15 @@
+#ifndef BATTLE_H
+#define BATTLE_H
+
 #include "trainer.h"
 
 class Battle
 {
-    Trainer &a_, &b_;
+    Trainer &t1, &t2;
 
 public:
-    Battle(Trainer &x, Trainer &y);
+    Battle(Trainer &t1, Trainer &t2);
     Trainer &run();
 };
+
+#endif

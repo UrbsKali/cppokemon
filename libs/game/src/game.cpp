@@ -7,7 +7,7 @@ Game::Game(Player player, vector<Pokemon *> &pokedex, vector<Leader> leaders, ve
 {
     for (auto &p : pokedex)
     {
-        dex_.emplace(p->name(), p);
+        pokedex_.emplace(p->name(), p);
     }
 }
 
@@ -82,7 +82,7 @@ void Game::fightLeader()
 
 void Game::fightMaster()
 {
-    if (player_.badgeCount() < leaders_.size())
+    if (player_.badgeCount() < static_cast<int>(leaders_.size()))
     {
         cout << "Tous les badges sont requis.\n";
         return;
