@@ -1,4 +1,5 @@
 #include "game.h"
+#include <stdlib.h>
 
 // Constructor
 Game::Game(Player player, vector<Pokemon *> &pokedex, vector<Leader> leaders, vector<Master> masters)
@@ -20,17 +21,19 @@ void Game::mainloop()
              << "4 - Affronter un leader\n5 - Affronter un Maître\n6 - Quitter\nChoix: ";
         int c;
         cin >> c;
+        system("clear");
+
         switch (c)
         {
         case 1:
             player_.showTeam();
             break;
         case 2:
-            player_.healAll();
-            cout << "Équipe soignée.\n";
+            player_.stats();
             break;
         case 3:
-            player_.stats();
+            player_.healAll();
+            cout << "Équipe soignée.\n";
             break;
         case 4:
             fightLeader();
